@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortLab - Protein Research Portal</title>
+    <title>ProtLab - Protein Research Portal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,14 +17,13 @@
     <header>
         <div class="logo-container" id="home-logo">
             <div class="logo">PL</div>
-            <div class="logo-text">PortLab</div>
+            <div class="logo-text">ProtLab</div>
         </div>
         <nav>
             <ul>
                 <li><a href="#" class="nav-link active" data-page="home-page"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="#" class="nav-link" data-page="search-page"><i class="fas fa-search"></i> Search</a></li>
                 <li><a href="#"><i class="fas fa-database"></i> Database</a></li>
-                <li><a href="#"><i class="fas fa-tools"></i> Tools</a></li>
                 <li><a href="#"><i class="fas fa-book"></i> Docs</a></li>
             </ul>
         </nav>
@@ -33,13 +32,13 @@
     <!-- Home Page -->
     <div id="home-page" class="page-container active">
         <div class="hero-section">
-            <h1>Molecular Protein Structure Visualization</h1>
-            <p>Explore intricate protein architectures with our advanced 3D molecular visualization platform. Understand
-                protein folding, bonding patterns, and structural relationships at atomic resolution.</p>
+            <h1>Human Protein Structure Visualization</h1>
+            <p>Exploring three-dimensional structures of essential human proteins for advanced biological and
+                biomedical research.</p>
 
             <!-- Animated Molecular Structure Display -->
             <div class="protein-display-container">
-                <h2><i class="fas fa-atom"></i> Interactive Protein Structure</h2>
+                <h2><i class="fas fa-atom"></i>Protein Protein Interaction Network</h2>
 
                 <div class="molecular-container">
                     <!-- Circular molecular structure - exact recreation of the image -->
@@ -51,7 +50,7 @@
                         <div class="inner-ring"></div>
 
                         <!-- Central core -->
-                        <div class="central-core">CORE</div>
+                        <div class="central-core"></div>
 
                         <!-- Orbiting balls will be added by JavaScript -->
                     </div>
@@ -84,10 +83,10 @@
                     </button>
                 </div> -->
 
-                <p class="protein-info">This interactive visualization represents a protein molecular structure with
-                    orbiting atoms and dynamic connections. Each ball represents a molecular component, and the
-                    connections show bonding relationships. Hover over the structure to see protein details, or use the
-                    controls to manipulate the view.</p>
+                <p class="protein-info">Protein–Protein Interaction network analysis identifies essential human proteins
+                    by examining connectivity and network topology, revealing proteins that play central roles in
+                    maintaining cellular function, biological stability, and survival across critical molecular
+                    pathways.</p>
             </div>
 
             <div class="cta-buttons">
@@ -104,25 +103,23 @@
     <!-- Search Page -->
     <div id="search-page" class="page-container">
         <div class="search-container">
-            <h1>Find Your Protein</h1>
-            <p class="search-subtitle">Search the world's leading high-quality, comprehensive and freely accessible
-                resource of protein sequence and functional information.</p>
+            <h1>Determine Protein Essentiality</h1>
+            <p class="search-subtitle">Enter a Human Protein name or UniProt ID to determine essential protein &
+                <br>Discover their interaction networks.
+            </p>
 
             <div class="search-box-container">
-                <label class="search-label">UniProt Protein Search</label>
+                <label class="search-label">Protein Name</label>
                 <input type="text" class="search-box" id="protein-search"
-                    placeholder="Examples: Insulin, APP, Human, P5087, organism_id:9606">
-                <div class="search-examples">Enter protein names, genes, organisms, UniProt IDs, or advanced queries to
-                    find molecular structures</div>
+                    placeholder="Examples: Human, A0AV96, organism_id:9606">
+
             </div>
 
             <div class="search-actions">
                 <button class="search-btn search-btn-primary" id="search-action">
                     <i class="fas fa-search"></i> Search Structures
                 </button>
-                <button class="search-btn search-btn-secondary">
-                    <i class="fas fa-sliders-h"></i> Advanced
-                </button>
+
                 <button class="search-btn search-btn-secondary">
                     <i class="fas fa-list"></i> Browse
                 </button>
@@ -131,10 +128,6 @@
                 </button>
             </div>
 
-            <div style="margin-top: 3rem; text-align: center; color: #64ffda; font-size: 1.1rem;">
-                <i class="fas fa-lightbulb"></i> Try searching for "Hemoglobin", "Insulin", or "Myoglobin" to explore
-                protein structures
-            </div>
         </div>
     </div>
 

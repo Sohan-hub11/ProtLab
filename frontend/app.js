@@ -105,28 +105,23 @@
         // Ball data: position, size, label, type
         const ballData = [
             // Large balls (outer ring) - 6 balls
-            { size: 'large', label: 'H', type: 'hydrogen', color: '#64ffda', orbitRadius: 300 },
-            { size: 'large', label: 'O', type: 'oxygen', color: '#64ffda', orbitRadius: 300 },
-            { size: 'large', label: 'N', type: 'nitrogen', color: '#64ffda', orbitRadius: 300 },
-            { size: 'large', label: 'C', type: 'carbon', color: '#64ffda', orbitRadius: 300 },
-            { size: 'large', label: 'S', type: 'sulfur', color: '#64ffda', orbitRadius: 300 },
-            { size: 'large', label: 'P', type: 'phosphorus', color: '#64ffda', orbitRadius: 300 },
+            { size: 'large', label: 'A0JLT2', type: 'hydrogen', color: '#64ffda', orbitRadius: 300 },
+            { size: 'large', label: 'A0M8Q6', type: 'oxygen', color: '#64ffda', orbitRadius: 300 },
+            { size: 'medium', label: 'A0FGR8', type: 'nitrogen', color: '#64ffda', orbitRadius: 300 },
+            { size: 'large', label: 'A0JP26', type: 'carbon', color: '#64ffda', orbitRadius: 300 },
+            { size: 'large', label: 'A0AVI4', type: 'sulfur', color: '#64ffda', orbitRadius: 300 },
+
+            { size: 'medium', label: 'Q9NX7', type: 'calcium', color: '#a8b2d1', orbitRadius: 220 },
+            { size: 'medium', label: 'Q86UW', type: 'sodium', color: '#a8b2d1', orbitRadius: 220 },
+            { size: 'medium', label: 'P6299', type: 'potassium', color: '#a8b2d1', orbitRadius: 220 },
+            { size: 'medium', label: 'P5074', type: 'magnesium', color: '#a8b2d1', orbitRadius: 220 },
+            { size: 'medium', label: 'Q63ZY', type: 'chlorine', color: '#a8b2d1', orbitRadius: 220 },
             
-            // Medium balls (middle ring) - 6 balls
-            { size: 'medium', label: 'Ca', type: 'calcium', color: '#a8b2d1', orbitRadius: 220 },
-            { size: 'medium', label: 'Na', type: 'sodium', color: '#a8b2d1', orbitRadius: 220 },
-            { size: 'medium', label: 'K', type: 'potassium', color: '#a8b2d1', orbitRadius: 220 },
-            { size: 'medium', label: 'Mg', type: 'magnesium', color: '#a8b2d1', orbitRadius: 220 },
-            { size: 'medium', label: 'Cl', type: 'chlorine', color: '#a8b2d1', orbitRadius: 220 },
-            { size: 'medium', label: 'Fe', type: 'iron', color: '#a8b2d1', orbitRadius: 220 },
+            { size: 'large', label: 'B7ZLH0', type: 'zinc', color: '#8892b0', orbitRadius: 140 },
+ 
+            { size: 'large', label: 'A1A5C7', type: 'cobalt', color: '#8892b0', orbitRadius: 140 },
+            { size: 'large', label: 'UBE2QL1', type: 'nickel', color: '#8892b0', orbitRadius: 140 },
             
-            // Small balls (inner ring) - 6 balls
-            { size: 'small', label: 'Zn', type: 'zinc', color: '#8892b0', orbitRadius: 140 },
-            { size: 'small', label: 'Cu', type: 'copper', color: '#8892b0', orbitRadius: 140 },
-            { size: 'small', label: 'Mn', type: 'manganese', color: '#8892b0', orbitRadius: 140 },
-            { size: 'small', label: 'Co', type: 'cobalt', color: '#8892b0', orbitRadius: 140 },
-            { size: 'small', label: 'Ni', type: 'nickel', color: '#8892b0', orbitRadius: 140 },
-            { size: 'small', label: 'Mo', type: 'molybdenum', color: '#8892b0', orbitRadius: 140 }
         ];
         
         // Create orbiting balls

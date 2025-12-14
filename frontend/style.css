@@ -539,7 +539,7 @@ nav a:hover::after {
 .search-subtitle {
     text-align: center;
     color: #a8b2d1;
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     margin-bottom: 3rem;
     line-height: 1.6;
 }
@@ -619,6 +619,7 @@ nav a:hover::after {
     background-color: transparent;
     color: #64ffda;
     border: 2px solid #64ffda;
+    padding: 0px 10vh;
 }
 
 .search-btn-secondary:hover {
