@@ -173,33 +173,33 @@
                         inset 0 0 20px rgba(255, 255, 255, 0.5)`;
                     
                     // Show info about this element
-                    const typeNames = {
-                        'hydrogen': 'Hydrogen Atom',
-                        'oxygen': 'Oxygen Atom',
-                        'nitrogen': 'Nitrogen Atom',
-                        'carbon': 'Carbon Atom',
-                        'sulfur': 'Sulfur Atom',
-                        'phosphorus': 'Phosphorus Atom',
-                        'calcium': 'Calcium Ion',
-                        'sodium': 'Sodium Ion',
-                        'potassium': 'Potassium Ion',
-                        'magnesium': 'Magnesium Ion',
-                        'chlorine': 'Chlorine Ion',
-                        'iron': 'Iron Ion',
-                        'zinc': 'Zinc Ion',
-                        'copper': 'Copper Ion',
-                        'manganese': 'Manganese Ion',
-                        'cobalt': 'Cobalt Ion',
-                        'nickel': 'Nickel Ion',
-                        'molybdenum': 'Molybdenum Ion'
-                    };
+                    // const typeNames = {
+                    //     'hydrogen': 'Hydrogen Atom',
+                    //     'oxygen': 'Oxygen Atom',
+                    //     'nitrogen': 'Nitrogen Atom',
+                    //     'carbon': 'Carbon Atom',
+                    //     'sulfur': 'Sulfur Atom',
+                    //     'phosphorus': 'Phosphorus Atom',
+                    //     'calcium': 'Calcium Ion',
+                    //     'sodium': 'Sodium Ion',
+                    //     'potassium': 'Potassium Ion',
+                    //     'magnesium': 'Magnesium Ion',
+                    //     'chlorine': 'Chlorine Ion',
+                    //     'iron': 'Iron Ion',
+                    //     'zinc': 'Zinc Ion',
+                    //     'copper': 'Copper Ion',
+                    //     'manganese': 'Manganese Ion',
+                    //     'cobalt': 'Cobalt Ion',
+                    //     'nickel': 'Nickel Ion',
+                    //     'molybdenum': 'Molybdenum Ion'
+                    // };
                     
-                    const proteinOverlay = document.querySelector('.protein-overlay');
-                    const proteinName = document.querySelector('.protein-name');
-                    const proteinDesc = document.querySelector('.protein-desc');
+                    // const proteinOverlay = document.querySelector('.protein-overlay');
+                    // const proteinName = document.querySelector('.protein-name');
+                    // const proteinDesc = document.querySelector('.protein-desc');
                     
-                    proteinName.textContent = `${typeNames[ball.type]} (${ball.label})`;
-                    proteinDesc.textContent = `This ${ball.type} atom plays a crucial role in protein structure and function. Click to explore more details about its molecular properties and bonding characteristics.`;
+                    // proteinName.textContent = `${typeNames[ball.type]} (${ball.label})`;
+                    // proteinDesc.textContent = `This ${ball.type} atom plays a crucial role in protein structure and function. Click to explore more details about its molecular properties and bonding characteristics.`;
                     
                     // Ensure overlay is visible
                     proteinOverlay.style.transform = 'translateY(0)';
