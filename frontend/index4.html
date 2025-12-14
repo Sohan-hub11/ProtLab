@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortLab - Protein Research Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Animated background elements -->
+    <div id="background-container"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container" id="home-logo">
+            <div class="logo">PL</div>
+            <div class="logo-text">PortLab</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link active" data-page="home-page"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#" class="nav-link" data-page="search-page"><i class="fas fa-search"></i> Search</a></li>
+                <li><a href="#"><i class="fas fa-database"></i> Database</a></li>
+                <li><a href="#"><i class="fas fa-tools"></i> Tools</a></li>
+                <li><a href="#"><i class="fas fa-book"></i> Docs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Page -->
+    <div id="home-page" class="page-container active">
+        <div class="hero-section">
+            <h1>Molecular Protein Structure Visualization</h1>
+            <p>Explore intricate protein architectures with our advanced 3D molecular visualization platform. Understand
+                protein folding, bonding patterns, and structural relationships at atomic resolution.</p>
+
+            <!-- Animated Molecular Structure Display -->
+            <div class="protein-display-container">
+                <h2><i class="fas fa-atom"></i> Interactive Protein Structure</h2>
+
+                <div class="molecular-container">
+                    <!-- Circular molecular structure - exact recreation of the image -->
+                    <div class="circular-structure" id="circular-structure">
+                        <!-- Outer ring -->
+                        <div class="outer-ring"></div>
+
+                        <!-- Inner ring -->
+                        <div class="inner-ring"></div>
+
+                        <!-- Central core -->
+                        <div class="central-core">CORE</div>
+
+                        <!-- Orbiting balls will be added by JavaScript -->
+                    </div>
+
+                    <!-- Protein info overlay -->
+                    <div class="protein-overlay">
+                        <div class="protein-name">Protein Molecular Structure</div>
+                        <div class="protein-desc">This interactive visualization represents a protein's molecular
+                            structure with orbiting atoms and dynamic connections. Click on any ball to explore specific
+                            molecular components.</div>
+                    </div>
+                </div>
+
+                <!-- Structure controls -->
+                <div class="structure-controls">
+                    <button class="control-btn active" id="toggle-rotation">
+                        <i class="fas fa-play"></i> Rotation On
+                    </button>
+                    <button class="control-btn" id="toggle-connections">
+                        <i class="fas fa-link"></i> Show Connections
+                    </button>
+                    <button class="control-btn" id="change-speed">
+                        <i class="fas fa-tachometer-alt"></i> Speed: Normal
+                    </button>
+                    <button class="control-btn" id="highlight-balls">
+                        <i class="fas fa-star"></i> Highlight Balls
+                    </button>
+                    <button class="control-btn" id="reset-view">
+                        <i class="fas fa-redo"></i> Reset
+                    </button>
+                </div>
+
+                <p class="protein-info">This interactive visualization represents a protein molecular structure with
+                    orbiting atoms and dynamic connections. Each ball represents a molecular component, and the
+                    connections show bonding relationships. Hover over the structure to see protein details, or use the
+                    controls to manipulate the view.</p>
+            </div>
+
+            <div class="cta-buttons">
+                <button class="btn btn-primary" id="go-to-search">
+                    <i class="fas fa-search"></i> Search Protein Structures
+                </button>
+                <button class="btn btn-secondary" id="explore-visualization">
+                    <i class="fas fa-eye"></i> Explore 3D Visualization
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Page -->
+    <div id="search-page" class="page-container">
+        <div class="search-container">
+            <h1>Find Your Protein</h1>
+            <p class="search-subtitle">Search the world's leading high-quality, comprehensive and freely accessible
+                resource of protein sequence and functional information.</p>
+
+            <div class="search-box-container">
+                <label class="search-label">UniProt Protein Search</label>
+                <input type="text" class="search-box" id="protein-search"
+                    placeholder="Examples: Insulin, APP, Human, P5087, organism_id:9606">
+                <div class="search-examples">Enter protein names, genes, organisms, UniProt IDs, or advanced queries to
+                    find molecular structures</div>
+            </div>
+
+            <div class="search-actions">
+                <button class="search-btn search-btn-primary" id="search-action">
+                    <i class="fas fa-search"></i> Search Structures
+                </button>
+                <button class="search-btn search-btn-secondary">
+                    <i class="fas fa-sliders-h"></i> Advanced
+                </button>
+                <button class="search-btn search-btn-secondary">
+                    <i class="fas fa-list"></i> Browse
+                </button>
+                <button class="search-btn search-btn-secondary" id="go-to-home">
+                    <i class="fas fa-home"></i> Home
+                </button>
+            </div>
+
+            <div style="margin-top: 3rem; text-align: center; color: #64ffda; font-size: 1.1rem;">
+                <i class="fas fa-lightbulb"></i> Try searching for "Hemoglobin", "Insulin", or "Myoglobin" to explore
+                protein structures
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-dna"></i> PortLab Protein Research Portal
+            </div>
+
+            <div class="footer-links">
+                <a href="#"><i class="fas fa-user-friends"></i> About</a>
+                <a href="#"><i class="fas fa-newspaper"></i> News</a>
+                <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="#"><i class="fas fa-shield-alt"></i> Privacy</a>
+                <a href="#"><i class="fas fa-file-contract"></i> Terms</a>
+                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+
+            <div class="copyright">
+                &copy; 2025 PortLab Protein Research Portal. All rights reserved. <br>
+                Molecular visualization data provided for research and educational purposes only.
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
